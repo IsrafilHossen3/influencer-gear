@@ -9,28 +9,53 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+/* main styles */
+main {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 100px;
+}
+
+.btn-primary {
+  background-color: #e02c6d;
+  padding: 10px 24px;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+}
 
 /* nav styles */
 header {
   padding: 50px 120px;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
 }
+
 nav h3 {
   font-size: 1.5rem;
   font-weight: 700;
   color: #3a3a3a;
   cursor: pointer;
 }
+
 .menu {
   display: flex;
   gap: 34px;
 }
+
 .menu li {
   list-style-type: none;
 }
+
 .menu li a {
   text-decoration: none;
   color: #3a3a3a;
@@ -67,17 +92,6 @@ nav h3 {
   font-size: 1rem;
 }
 
-.btn-primary {
-  background-color: #e02c6d;
-  padding: 10px 24px;
-  border-radius: 40px;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 700;
-  border: 0;
-  cursor: pointer;
-}
-
 .banner-img img {
   width: 100%;
   background-image: url(../images/Circle_design.svg);
@@ -85,11 +99,19 @@ nav h3 {
   background-position: center center;
 }
 
-/* media query */
+/* sponsors section */
+.sponsors {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -50px;
+}
+
+/********************************** media query ******************************/
 /* small devices */
 @media screen and (max-width: 576px) {
   nav,
-  ul.menu {
+  ul.menu,
+  .sponsors {
     flex-direction: column;
   }
   header {
@@ -117,12 +139,22 @@ nav h3 {
   .btn-primary {
     font-weight: 500;
   }
+  .sponsors {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .sponsors img {
+    width: 50%;
+  }
 }
 
 /* medium devices */
 @media screen and (min-width: 577px) and (max-width: 992px) {
   nav,
-  ul.menu {
+  ul.menu,
+  .sponsors {
     flex-direction: column;
   }
   nav {
@@ -136,5 +168,14 @@ nav h3 {
     flex-direction: column-reverse;
     text-align: center;
     gap: 1rem;
+  }
+  .sponsors {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+  .sponsors img {
+    width: 50%;
   }
 }
