@@ -211,9 +211,43 @@ nav h3 {
   margin-bottom: 1rem;
 }
 
+/* footer */
+footer {
+  background-color: #0a0826;
+  padding: 50px 0;
+  text-align: center;
+  color: #fff;
+  margin-top: 100px;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.copy-right-text {
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: #d9dbe1;
+  margin-bottom: 17px;
+}
+
+.social-icons i {
+  background-color: #22213c;
+  padding: 12px;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
 /********************************** media query ******************************/
 /* small devices */
 @media screen and (max-width: 576px) {
+  section {
+    margin-top: 50px;
+  }
   nav,
   ul.menu,
   .sponsors {
@@ -267,6 +301,9 @@ nav h3 {
   }
   .featured-products-content h2 {
     font-size: 1.5rem;
+  }
+  footer {
+    margin-top: 50px;
   }
 }
 
